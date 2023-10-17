@@ -80,22 +80,22 @@ namespace MarthasCoffe.DataAccess
 
 
             modelBuilder.Entity<Categoria>().HasData(
-                new Categoria { IdCategoria = 1, Descripcion = "Tecnologia", Imagen = "cup.jpg" },
-                new Categoria { IdCategoria = 2, Descripcion = "Muebles", Imagen = "cup.jpg" },
-                new Categoria { IdCategoria = 3, Descripcion = "Dormitorio", Imagen = "cup.jpg" },
-                new Categoria { IdCategoria = 4, Descripcion = "Deportes", Imagen = "cup.jpg" },
-                new Categoria { IdCategoria = 5, Descripcion = "Zapatos", Imagen = "cup.jpg" },
-                new Categoria { IdCategoria = 6, Descripcion = "Accesorios", Imagen = "cup.jpg" },
-                new Categoria { IdCategoria = 7, Descripcion = "Juguetes", Imagen = "cup.jpg" },
-                new Categoria { IdCategoria = 8, Descripcion = "Electrohogar", Imagen = "cup.jpg" }
+                new Categoria { IdCategoria = 1, Descripcion = "jjjj", Imagen = "cup.jpg" },
+                new Categoria { IdCategoria = 2, Descripcion = "nnnnn", Imagen = "cup.jpg" },
+                new Categoria { IdCategoria = 3, Descripcion = "vhbjb", Imagen = "cup.jpg" },
+                new Categoria { IdCategoria = 4, Descripcion = "vhvkj", Imagen = "cup.jpg" },
+                new Categoria { IdCategoria = 5, Descripcion = "gvbhvh", Imagen = "cup.jpg" },
+                new Categoria { IdCategoria = 6, Descripcion = "vggjvhbk", Imagen = "cup.jpg" },
+                new Categoria { IdCategoria = 7, Descripcion = "bbbbb", Imagen = "cup.jpg" },
+                new Categoria { IdCategoria = 8, Descripcion = "bjbubb", Imagen = "cup.jpg" }
                 );
 
             modelBuilder.Entity<Producto>().HasData(
                 new Producto
                 {
                     IdProducto = 1,
-                    Nombre = "Consola de PS4 Pro 1TB Negro",
-                    Descripcion = "Tipo: PS4\r\nProcesador: AMD\r\nEntradas USB: 3\r\nEntradas HDMI: 1\r\nConectividad: WiFi",
+                    Nombre = "sdfsfcds",
+                    Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
                     IdCategoria = 1,
                     Precio = 2000,
                     Imagen = "cup.jpg"
@@ -103,8 +103,8 @@ namespace MarthasCoffe.DataAccess
                 new Producto
                 {
                     IdProducto = 2,
-                    Nombre = "HP Laptop 15-EF1019LA",
-                    Descripcion = "Procesador: AMD RYZEN R5\r\nModelo tarjeta de video: Gráficos AMD Radeon\r\nTamaño de la pantalla: 15.6 pulgadas\r\nDisco duro sólido: 512GB\r\nNúcleos del procesador: Hexa Core",
+                    Nombre = "sdfsfcds",
+                    Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
                     IdCategoria = 1,
                     Precio = 2500,
                     Imagen = "cup.jpg"
@@ -112,8 +112,8 @@ namespace MarthasCoffe.DataAccess
                 new Producto
                 {
                     IdProducto = 3,
-                    Nombre = "Televisor 65 4K Ultra HD Smart TV 65UN7100PSA.AWF",
-                    Descripcion = "Tamaño de la pantalla: 65 pulgadas\r\nResolución: 4K Ultra HD\r\nTecnología: LED\r\nConexión Bluetooth: Sí\r\nEntradas USB: 2",
+                    Nombre = "sdfsfcds",
+                    Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
                     IdCategoria = 1,
                     Precio = 3000,
                     Imagen = "prod3.jpg"
@@ -121,8 +121,8 @@ namespace MarthasCoffe.DataAccess
                 new Producto
                 {
                     IdProducto = 4,
-                    Nombre = "Televisor 50 4K Ultra HD Smart Android",
-                    Descripcion = "Tamaño de la pantalla: 50 pulgadas\r\nResolución: 4K Ultra HD\r\nTecnología: LED\r\nConexión Bluetooth: Sí\r\nEntradas USB: 2",
+                    Nombre = "sdfsfcds",
+                    Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
                     IdCategoria = 1,
                     Precio = 3200,
                     Imagen = "cup.jpg"
@@ -130,8 +130,8 @@ namespace MarthasCoffe.DataAccess
                 new Producto
                 {
                     IdProducto = 5,
-                    Nombre = "Cámara Reflex EOS Rebel T100",
-                    Descripcion = "Tipo: Camara\r\nProcesador: AMD\r\nEntradas USB: 3\r\nEntradas HDMI: 1",
+                    Nombre = "sdfsfcds",
+                    Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
                     IdCategoria = 1,
                     Precio = 1560,
                     Imagen = "cup.jpg"
@@ -139,8 +139,8 @@ namespace MarthasCoffe.DataAccess
                 new Producto
                 {
                     IdProducto = 6,
-                    Nombre = "Aparador Surat",
-                    Descripcion = "Marca: Roberta Allen\r\nModelo: SURAT\r\nTipo: Buffets\r\nAlto: 86 cm\r\nAncho: 85 cm",
+                    Nombre = "sdfsfcds",
+                    Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
                     IdCategoria = 2,
                     Precio = 500,
                     Imagen = "prod6.jpg"
@@ -148,8 +148,8 @@ namespace MarthasCoffe.DataAccess
                 new Producto
                 {
                     IdProducto = 7,
-                    Nombre = "Mesa de Comedor Donatello",
-                    Descripcion = "Ancho/Diámetro: 90 cm\r\nLargo: 150 cm\r\nAlto: 75 cm\r\nNúmero de puestos: 6\r\nMaterial de la base: Madera",
+                    Nombre = "sdfsfcds",
+                    Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
                     IdCategoria = 2,
                     Precio = 400,
                     Imagen = "cup.jpg"
@@ -157,8 +157,8 @@ namespace MarthasCoffe.DataAccess
                 new Producto
                 {
                     IdProducto = 8,
-                    Nombre = "Colchón Polaris 1 Plz + 1 Almohada + Protector",
-                    Descripcion = "Nivel de confort: Intermedio\r\nTamaño: 1 plz\r\nTipo de estructura: Acero\r\nRelleno del colchón: Resortes\r\nMaterial del tapiz: Jacquard",
+                    Nombre = "sdfsfcds",
+                    Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
                     IdCategoria = 3,
                     Precio = 500,
                     Imagen = "cup.jpg"
@@ -166,8 +166,8 @@ namespace MarthasCoffe.DataAccess
                 new Producto
                 {
                     IdProducto = 9,
-                    Nombre = "Juegos de Sábanas 180 Hilos Solid",
-                    Descripcion = "Nivel de confort: Intermedio\r\n1.5 PLAZAS",
+                    Nombre = "sdfsfcds",
+                    Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
                     IdCategoria = 3,
                     Precio = 200,
                     Imagen = "prod9.jpg"
@@ -175,8 +175,8 @@ namespace MarthasCoffe.DataAccess
                 new Producto
                 {
                     IdProducto = 10,
-                    Nombre = "Tocador Franca",
-                    Descripcion = "Marca: Mica\r\nTipo: Tocadores\r\nModelo: Franca\r\nMaterial de la estructura: Aglomerado MDP\r\nEspesor: 15 mm",
+                    Nombre = "sdfsfcds",
+                    Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
                     IdCategoria = 3,
                     Precio = 450,
                     Imagen = "cup.jpg"
@@ -184,8 +184,8 @@ namespace MarthasCoffe.DataAccess
                 new Producto
                 {
                     IdProducto = 11,
-                    Nombre = "Alfombra Infantil de Osa Melange Medio",
-                    Descripcion = "Marca: Be Crafty\r\nModelo: Osa\r\nTipo: Alfombras\r\nTipo de tejido: A mano\r\nTamaño: Pequeña",
+                    Nombre = "sdfsfcds",
+                    Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
                     IdCategoria = 3,
                     Precio = 2120,
                     Imagen = "cup.jpg"
@@ -193,7 +193,7 @@ namespace MarthasCoffe.DataAccess
                 new Producto
                 {
                     IdProducto = 12,
-                    Nombre = "Mochila Unisex Deportivo Classic",
+                    Nombre = "sdfsfcds",
                     Descripcion = "NINGUNO",
                     IdCategoria = 4,
                     Precio = 220,
@@ -202,7 +202,7 @@ namespace MarthasCoffe.DataAccess
                 new Producto
                 {
                     IdProducto = 13,
-                    Nombre = "Bicicleta Montañera Best Inka Aro 29 Roja",
+                    Nombre = "sdfsfcds",
                     Descripcion = "NINGUNO",
                     IdCategoria = 4,
                     Precio = 890,
@@ -211,7 +211,7 @@ namespace MarthasCoffe.DataAccess
                 new Producto
                 {
                     IdProducto = 14,
-                    Nombre = "Zapatillas Urbanas Mujer adidas Team Court",
+                    Nombre = "sdfsfcds",
                     Descripcion = "TALLA: 4\r\nTALLA:4.5",
                     IdCategoria = 5,
                     Precio = 260,
@@ -220,7 +220,7 @@ namespace MarthasCoffe.DataAccess
                 new Producto
                 {
                     IdProducto = 15,
-                    Nombre = "Zapatillas Training Hombre Rebook Dart TR 2",
+                    Nombre = "jsjsjnjj",
                     Descripcion = "TALLA: 4\r\nTALLA:4.5",
                     IdCategoria = 5,
                     Precio = 230,
@@ -229,7 +229,7 @@ namespace MarthasCoffe.DataAccess
                 new Producto
                 {
                     IdProducto = 16,
-                    Nombre = "Reloj",
+                    Nombre = "jsjsjnjj",
                     Descripcion = "NINGUNO",
                     IdCategoria = 6,
                     Precio = 300,
@@ -238,7 +238,7 @@ namespace MarthasCoffe.DataAccess
                 new Producto
                 {
                     IdProducto = 17,
-                    Nombre = "Billetera Hombre",
+                    Nombre = "mkmkmkmk",
                     Descripcion = "NINGUNO",
                     IdCategoria = 6,
                     Precio = 87,
@@ -247,7 +247,7 @@ namespace MarthasCoffe.DataAccess
                  new Producto
                  {
                      IdProducto = 18,
-                     Nombre = "Auto Deportivo 45 cm Naranja",
+                     Nombre = "njjnj",
                      Descripcion = "COLOR: NARANJA",
                      IdCategoria = 7,
                      Precio = 90,
@@ -256,7 +256,7 @@ namespace MarthasCoffe.DataAccess
                   new Producto
                   {
                       IdProducto = 19,
-                      Nombre = "Set de Juego Hot Wheels Robo Tiburón",
+                      Nombre = "njjj",
                       Descripcion = "NINGUNO",
                       IdCategoria = 7,
                       Precio = 130,
@@ -265,7 +265,7 @@ namespace MarthasCoffe.DataAccess
                   new Producto
                   {
                       IdProducto = 20,
-                      Nombre = "Lego 10713 Set Classic: Maletín Creativo",
+                      Nombre = "njjnjnjnjnj",
                       Descripcion = "NINGUNO",
                       IdCategoria = 7,
                       Precio = 110,

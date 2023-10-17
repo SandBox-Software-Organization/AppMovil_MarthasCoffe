@@ -1,41 +1,95 @@
 <?xml version="1.0" encoding="utf-8" ?>
+    
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
              xmlns:vm="clr-namespace:MarthasCoffe.ViewsModels"
-
+             
              x:Class="MarthasCoffe.Pages.LoginPage"
+             
              Title="LoginPage">
+    
+    <!-- Conexión Binding -->
+    
     <ContentPage.BindingContext>
+        
         <vm:LoginViewModel/>
+        
     </ContentPage.BindingContext>
+    
+    <ScrollView>
 
-    <Grid>
+    <!-- Definición del vertical y ajustes del padding -->
+
+    <VerticalStackLayout Padding="10,10,10,10">
+        
+    <!-- Definición de filas y columnas del grid, definición del padding -->
+
+    <Grid RowSpacing="20" Padding="10,10,10,10">
+        
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="1*" />
-        </Grid.RowDefinitions>
+            
+            <RowDefinition Height="200"/>
+            
+            <RowDefinition/>
 
+            <RowDefinition/>
 
-        <StackLayout Grid.Row="1" Orientation="Vertical" Spacing="10">
-            <Image Source="dotnet_bot.svg" HorizontalOptions="Center" HeightRequest="100" WidthRequest="100"/>
+            <RowDefinition/>
 
-            <Label Text="Bienvenido" TextColor="#101010" FontSize="Title" HorizontalOptions="Center" FontAttributes="Bold"></Label>
+            <RowDefinition/>
 
-            <StackLayout Orientation="Vertical" Margin="0,10" Spacing="5" HorizontalOptions="Center">
-                <Label Text="Ingrese sus credenciales" TextColor="LightSlateGray" FontSize="Small" HorizontalOptions="Center"/>
-                <Label Text="*Usuario:  Admin" TextColor="LightSlateGray" FontSize="Small" HorizontalOptions="Center"/>
-                <Label Text="*Contraseña:  123" TextColor="LightSlateGray" FontSize="Small" HorizontalOptions="Center"/>
-            </StackLayout>
+            <RowDefinition/>
 
+            <RowDefinition/>
 
-            <StackLayout Orientation="Vertical" Spacing="5" HorizontalOptions="FillAndExpand" Padding="30,0">
-                <Entry Text="{Binding Usuario}" Placeholder="Usuario"/>
-                <Entry Text="{Binding Password}" Placeholder="Contraseña" IsPassword="True"/>
+            </Grid.RowDefinitions>
 
-                <Button Text="Iniciar sesion" HeightRequest="50" FontSize="Medium" BackgroundColor="#1d94ab" Command="{Binding LoginCommand}"/>
-            </StackLayout>
+        <Grid.ColumnDefinitions>
 
-        </StackLayout>
+            <ColumnDefinition/>
+            
+        </Grid.ColumnDefinitions>
+        
+            <!-- Logo y sus atributos-->
+
+            <Image Grid.Row="0" Grid.Column="0" Source="logo.png" HorizontalOptions="Center"/>
+
+            <!-- Texto de bienvenida -->
+
+                <Label Grid.Row="1" Grid.Column="0" FontSize="30" Text="Bienvenid@" HorizontalOptions="Center" FontAttributes="Bold"/>
+
+            <!-- Texto de indicaciones -->
+
+            <Label Grid.Row="2" Grid.Column="0" Text="Ingrese sus credenciales" HorizontalOptions="Center" FontAttributes="Bold"/>
+
+            <!-- Usuario y contraseña -->
+
+            <VerticalStackLayout Grid.Row="3" Grid.Column="0">
+                
+            <Label Text="*Usuario: Admin" FontSize="Small" HorizontalOptions="Center" FontAttributes="Bold"/>
+        
+            <Label Text="*Contraseña:  123"  FontSize="Small" HorizontalOptions="Center" FontAttributes="Bold"/>
+
+            </VerticalStackLayout>
+
+            <!-- Entry de usuario -->
+
+            <Entry Grid.Row="4" Grid.Column="0" Text="{Binding Usuario}" Placeholder="Ingrese su usuario"/>
+
+            <!-- Entry de Contraseña -->
+        
+            <Entry Grid.Row="5" Grid.Column="0" Text="{Binding Password}" Placeholder="Ingrese su contraseña" IsPassword="True"/>
+
+            <!-- Boton de inicio de sesión -->
+
+            <Button Grid.Row="6" Text="Iniciar sesion"  Command="{Binding LoginCommand}" CornerRadius="35"/>
+
     </Grid>
+
+    </VerticalStackLayout>
+
+    </ScrollView>
+    
 </ContentPage>

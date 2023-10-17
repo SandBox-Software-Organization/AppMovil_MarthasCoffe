@@ -146,7 +146,7 @@ namespace MarthasCoffe.DataAccess
                IdProducto = 7,
                Nombre = "Moca",
                Descripcion = "---",
-               IdCategoria = 3,
+               IdCategoria = 1,
                Precio = 3,
                Imagen = "calientesbebida2moca.png"
            },
@@ -155,7 +155,7 @@ namespace MarthasCoffe.DataAccess
                IdProducto = 8,
                Nombre = "Atol",
                Descripcion = "--",
-               IdCategoria = 2,
+               IdCategoria = 1,
                Precio = 4,
                Imagen = "calientesbebida3atol.png"
            },
@@ -235,25 +235,25 @@ namespace MarthasCoffe.DataAccess
            {
                IdProducto = 17,
                Nombre = "Mochis",
-               Descripcion = "--",
+               Descripcion = "10 mochis con relleno de fresa y chocolate",
                IdCategoria = 4,
-               Precio = 5,
+               Precio = 8,
                Imagen = "mochi.png"
            },
             new Producto
             {
                 IdProducto = 18,
                 Nombre = "Pai de Manzana",
-                Descripcion = "--",
+                Descripcion = "para 18 personas",
                 IdCategoria = 4,
-                Precio = 2,
+                Precio = 8,
                 Imagen = "pai.png"
             },
             new Producto
             {
                 IdProducto = 19,
                 Nombre = "Pastel de Helado",
-                Descripcion = "--",
+                Descripcion ="",
                 IdCategoria = 4,
                 Precio = 2,
                 Imagen = "pastel.png"
@@ -262,7 +262,7 @@ namespace MarthasCoffe.DataAccess
            {
                IdProducto = 20,
                Nombre = "Sandwich de Helado",
-               Descripcion = "--",
+               Descripcion = "",
                IdCategoria = 4,
                Precio = 5,
                Imagen = "sandwich.png"
@@ -275,6 +275,123 @@ namespace MarthasCoffe.DataAccess
                 IdCategoria = 3,
                 Precio = 2,
                 Imagen = "galletas.png"
+            },
+            new Producto
+            {
+                IdProducto = 22,
+                Nombre = "Kiwi",
+                Descripcion = "6",
+                IdCategoria = 3,
+                Precio = 2,
+                Imagen = "kiwi.png"
+            },
+            new Producto
+            {
+                IdProducto = 23,
+                Nombre = "Arroz con leche",
+                Descripcion = "--",
+                IdCategoria = 4,
+                Precio = 2,
+                Imagen = "arle.png"
+            },
+            new Producto
+            {
+                IdProducto = 24,
+                Nombre = "Dulces de Coco",
+                Descripcion = "",
+                IdCategoria = 3,
+                Precio = 2,
+                Imagen = "coco.png"
+            },
+            new Producto
+            {
+                IdProducto = 25,
+                Nombre = "Chocolate",
+                Descripcion = "",
+                IdCategoria = 3,
+                Precio = 2,
+                Imagen = "chocolat.png"
+            },
+            new Producto
+            {
+                IdProducto = 26,
+                Nombre = "Gomitas",
+                Descripcion = "20",
+                IdCategoria = 3,
+                Precio = 5,
+                Imagen = "gomitas.png"
+            },
+            new Producto
+            {
+                IdProducto = 27,
+                Nombre = "Pastel de Chocolate",
+                Descripcion = "Para 20 personas",
+                IdCategoria = 4,
+                Precio = 15,
+                Imagen = "choco.png"
+            },
+            new Producto
+            {
+                IdProducto = 28,
+                Nombre = "Deditos de Quseo",
+                Descripcion = "10",
+                IdCategoria = 3,
+                Precio = 4,
+                Imagen = "deditos.png"
+            },
+            new Producto
+            {
+                IdProducto = 29,
+                Nombre = "Pastel dulce",
+                Descripcion = "Patel de dulce de leche, para 30 personas",
+                IdCategoria = 4,
+                Precio = 18,
+                Imagen = "dulcemilk.png"
+            },
+            new Producto
+            {
+                IdProducto = 30,
+                Nombre = "Mango",
+                Descripcion = "--",
+                IdCategoria = 3,
+                Precio = 3,
+                Imagen = "mangoverd.png"
+            },
+            new Producto
+            {
+                IdProducto = 31,
+                Nombre = "Mani",
+                Descripcion = "",
+                IdCategoria = 3,
+                Precio = 2,
+                Imagen = "mani.png"
+            },
+            new Producto
+            {
+                IdProducto = 32,
+                Nombre = "Pan",
+                Descripcion = "--",
+                IdCategoria = 3,
+                Precio = 2,
+                Imagen = "pan.png"
+            },
+            new Producto
+            {
+                IdProducto = 33,
+                Nombre = "Ensalada",
+                Descripcion = "",
+                IdCategoria = 3,
+                Precio = 5,
+                Imagen = "sasa.png"
+            },
+            new Producto
+            {
+                IdProducto = 34,
+                Nombre = "Pastel de fresa",
+                Descripcion = "Pastel de fresa y vainilla, para 15 personas",
+                IdCategoria = 4,
+                Precio = 9,
+                Imagen = "titi.png"
             }
 
                );

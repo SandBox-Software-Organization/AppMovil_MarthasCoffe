@@ -165,7 +165,7 @@ namespace MarthasCoffe.DataAccess
                Nombre = "Sushi",
                Descripcion = "--",
                IdCategoria = 2,
-               Precio = 2,
+               Precio = 20,
                Imagen = "sushi.png"
            },
            new Producto
@@ -192,7 +192,7 @@ namespace MarthasCoffe.DataAccess
                 Nombre = "Bibimbap",
                 Descripcion = "--",
                 IdCategoria = 2,
-                Precio = 2,
+                Precio = 5,
                 Imagen = "bibimbap.png"
             },
            new Producto
@@ -219,7 +219,7 @@ namespace MarthasCoffe.DataAccess
                Nombre = "Crema de brocoli",
                Descripcion = "---",
                IdCategoria = 2,
-               Precio = 5,
+               Precio = 230,
                Imagen = "crema.png"
            },
            new Producto
@@ -380,7 +380,7 @@ namespace MarthasCoffe.DataAccess
                 IdProducto = 33,
                 Nombre = "Ensalada",
                 Descripcion = "",
-                IdCategoria = 3,
+                IdCategoria = 2,
                 Precio = 5,
                 Imagen = "sasa.png"
             },

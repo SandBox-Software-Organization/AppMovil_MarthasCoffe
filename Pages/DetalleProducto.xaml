@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MarthasCoffe.Pages.DetalleProducto"
-             Title="DetalleProducto"
+             Title="{Binding Producto.Nombre}"
                 Shell.TabBarIsVisible="False">
     <ScrollView>
         <Grid Margin="20" RowSpacing="5">

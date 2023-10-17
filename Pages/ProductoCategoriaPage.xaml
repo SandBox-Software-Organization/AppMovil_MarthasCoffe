@@ -3,43 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:model="clr-namespace:MarthasCoffe.DTO"
              x:Class="MarthasCoffe.Pages.ProductoCategoriaPage"
-             Title="ProductoCategoriaPage"
-             
+             Title="{Binding NombreCategoria}" 
              Shell.TabBarIsVisible="False">
-    <Grid Margin="10,0">
+    <Grid Margin="10,0" >
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0" Text="{Binding NombreCategoria}" FontSize="Large" Margin="15"/>
-
-        <ScrollView Grid.Row="1">
+        <ScrollView Grid.Row="1" Margin="0,10,0,0">
 
             <CollectionView SelectionMode="Single" ItemsSource="{Binding Productos}"
                                 SelectedItem="{Binding ProductoSeleccionado}" 
                                 SelectionChangedCommand="{Binding ProductoEventSelectedCommand}"
                                 >
                 <CollectionView.ItemsLayout>
-                    <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="20" Span="2"/>
+                    <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="10" Span="2"/>
                 </CollectionView.ItemsLayout>
 
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:ProductoDTO">
-                        <Border Padding="15" HorizontalOptions="Center" >
+                        <Border Padding="6" HorizontalOptions="Center" BackgroundColor="#f5e1ce" >
                             <Border.StrokeShape>
-                                <RoundRectangle CornerRadius="10,10,10,10"/>
+                                <RoundRectangle CornerRadius="20,20,20,20"/>
                             </Border.StrokeShape>
 
-                            <Grid RowSpacing="5" WidthRequest="145">
+                            <Grid RowSpacing="2" WidthRequest="150">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="Auto"/>
                                 </Grid.RowDefinitions>
-                                <Image Grid.Row="0" Aspect="Fill" Source="{Binding Imagen}"  HeightRequest="115"/>
-                                <Label Grid.Row="1" Text="{Binding Nombre}" FontSize="Subtitle"/>
+                                <Image Grid.Row="0" Aspect="Fill" Source="{Binding Imagen}"  HeightRequest="145"/>
+                                <Label Grid.Row="1" Text="{Binding Nombre}" FontSize="Subtitle" FontAttributes="Bold"/>
                                 <Label Grid.Row="3" Text="{Binding Precio, StringFormat='{0:C}'}" FontSize="Subtitle" TextColor="#1d94ab"/>
                             </Grid>
                         </Border>

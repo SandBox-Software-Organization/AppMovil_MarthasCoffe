@@ -89,104 +89,195 @@ namespace MarthasCoffe.DataAccess
             modelBuilder.Entity<Producto>().HasData(
             new Producto
             {
-              IdProducto = 1,
-            Nombre = "sdfsfcds",
-            Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
-            IdCategoria = 1,
-            Precio = 2000,
-            Imagen = "cup.jpg"
+                IdProducto = 1,
+                Nombre = "Horchata",
+                Descripcion = "---",
+                IdCategoria = 1,
+                Precio = 2,
+                Imagen = "horchata.png"
+            },
+           new Producto
+           {
+               IdProducto = 2,
+               Nombre = "Limonada de Fresa",
+               Descripcion = "---",
+               IdCategoria = 1,
+               Precio = 2,
+               Imagen = "limonada.jpg"
+           },
+           new Producto
+           {
+               IdProducto = 3,
+               Nombre = "mango",
+               Descripcion = "---",
+               IdCategoria = 1,
+               Precio = 3,
+               Imagen = "mango.png"
+           },
+           new Producto
+           {
+               IdProducto = 4,
+               Nombre = "Jamaica",
+               Descripcion = "-----",
+               IdCategoria = 1,
+               Precio = 3,
+               Imagen = "jamaica.png"
+           },
+           new Producto
+           {
+               IdProducto = 5,
+               Nombre = "Frape de fresa",
+               Descripcion = "--",
+               IdCategoria = 1,
+               Precio = 2,
+               Imagen = "frape.png"
+           },
+           new Producto
+           {
+               IdProducto = 6,
+               Nombre = "Capuchino",
+               Descripcion = "---",
+               IdCategoria = 1,
+               Precio = 2,
+               Imagen = "calientesbebida1capuchino.png"
+           },
+           new Producto
+           {
+               IdProducto = 7,
+               Nombre = "Moca",
+               Descripcion = "---",
+               IdCategoria = 3,
+               Precio = 3,
+               Imagen = "calientesbebida2moca.png"
+           },
+           new Producto
+           {
+               IdProducto = 8,
+               Nombre = "Atol",
+               Descripcion = "--",
+               IdCategoria = 2,
+               Precio = 4,
+               Imagen = "calientesbebida3atol.png"
+           },
+           new Producto
+           {
+               IdProducto = 9,
+               Nombre = "Sushi",
+               Descripcion = "--",
+               IdCategoria = 2,
+               Precio = 2,
+               Imagen = "sushi.png"
+           },
+           new Producto
+           {
+               IdProducto = 10,
+               Nombre = "Rollitos de primavera",
+               Descripcion = "Cantidad:10",
+               IdCategoria = 2,
+               Precio = 5,
+               Imagen = "rollitos.png"
+           },
+           new Producto
+           {
+               IdProducto = 11,
+               Nombre = "Carne",
+               Descripcion = "---",
+               IdCategoria = 2,
+               Precio = 6,
+               Imagen = "carne.png"
+           },
+            new Producto
+            {
+                IdProducto = 12,
+                Nombre = "Bibimbap",
+                Descripcion = "--",
+                IdCategoria = 2,
+                Precio = 2,
+                Imagen = "bibimbap.png"
+            },
+           new Producto
+           {
+               IdProducto = 13,
+               Nombre = "Ensalada",
+               Descripcion = "--",
+               IdCategoria = 2,
+               Precio = 5,
+               Imagen = "ensa.png"
+           },
+            new Producto
+            {
+                IdProducto = 14,
+                Nombre = "Ensalada de pollo",
+                Descripcion = "--",
+                IdCategoria = 2,
+                Precio = 2,
+                Imagen = "ensaladapollo.png"
+            },
+           new Producto
+           {
+               IdProducto = 15,
+               Nombre = "Crema de brocoli",
+               Descripcion = "---",
+               IdCategoria = 2,
+               Precio = 5,
+               Imagen = "crema.png"
+           },
+           new Producto
+           {
+               IdProducto = 16,
+               Nombre = "Alfajores",
+               Descripcion = "--",
+               IdCategoria = 4,
+               Precio = 2,
+               Imagen = "alfajores.png"
+           },
+           new Producto
+           {
+               IdProducto = 17,
+               Nombre = "Mochis",
+               Descripcion = "--",
+               IdCategoria = 4,
+               Precio = 5,
+               Imagen = "mochi.png"
+           },
+            new Producto
+            {
+                IdProducto = 18,
+                Nombre = "Pai de Manzana",
+                Descripcion = "--",
+                IdCategoria = 4,
+                Precio = 2,
+                Imagen = "pai.png"
+            },
+            new Producto
+            {
+                IdProducto = 19,
+                Nombre = "Pastel de Helado",
+                Descripcion = "--",
+                IdCategoria = 4,
+                Precio = 2,
+                Imagen = "pastel.png"
+            },
+           new Producto
+           {
+               IdProducto = 20,
+               Nombre = "Sandwich de Helado",
+               Descripcion = "--",
+               IdCategoria = 4,
+               Precio = 5,
+               Imagen = "sandwich.png"
+           },
+            new Producto
+            {
+                IdProducto = 21,
+                Nombre = "Galletas",
+                Descripcion = "--",
+                IdCategoria = 3,
+                Precio = 2,
+                Imagen = "galletas.png"
             }
-            //new Producto
-            //{
-            //  IdProducto = 2,
-            //Nombre = "sdfsfcds",
-            //Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
-            //IdCategoria = 1,
-            //Precio = 2500,
-            //Imagen = "cup.jpg"
-            //},
-            //new Producto
-            //{
-            //  IdProducto = 3,
-            //Nombre = "sdfsfcds",
-            //Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
-            //IdCategoria = 1,
-            //Precio = 3000,
-            //Imagen = "prod3.jpg"
-            //},
-            //new Producto
-            //{
-            //IdProducto = 4,
-            //Nombre = "sdfsfcds",
-            //Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
-            //IdCategoria = 1,
-            //Precio = 3200,
-            //Imagen = "cup.jpg"
-            //},
-            //new Producto
-            //{
-            //  IdProducto = 5,
-            //Nombre = "sdfsfcds",
-            //Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
-            //IdCategoria = 1,
-            //Precio = 1560,
-            //Imagen = "cup.jpg"
-            //},
-            //new Producto
-            //{
-            //  IdProducto = 6,
-            //Nombre = "sdfsfcds",
-            //Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
-            //IdCategoria = 2,
-            //Precio = 500,
-            //Imagen = "prod6.jpg"
-            //},
-            //new Producto
-            //{
-            //  IdProducto = 7,
-            //Nombre = "sdfsfcds",
-            //Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
-            //IdCategoria = 2,
-            //Precio = 400,
-            // Imagen = "cup.jpg"
-            //},
-            // new Producto
-            //{
-            //  IdProducto = 8,
-            // Nombre = "sdfsfcds",
-            //Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
-            //IdCategoria = 3,
-            //Precio = 500,
-            //Imagen = "cup.jpg"
-            //},
-            //new Producto
-            //{
-            //  IdProducto = 9,
-            //Nombre = "sdfsfcds",
-            //Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
-            //IdCategoria = 3,
-            //Precio = 200,
-            //Imagen = "prod9.jpg"
-            //},
-            //new Producto
-            //{
-            //  IdProducto = 10,
-            //Nombre = "sdfsfcds",
-            //Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
-            //IdCategoria = 3,
-            //Precio = 450,
-            //Imagen = "cup.jpg"
-            //},
-            //new Producto
-            //{
-              //  IdProducto = 20,
-                //Nombre = "njjnjnjnjnj",
-                //Descripcion = "NINGUNO",
-                //IdCategoria = 7,
-                //Precio = 110,
-                //Imagen = "cup.jpg"
-            //}
-                );
+
+               );
         }
     }
 }

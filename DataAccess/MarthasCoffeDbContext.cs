@@ -247,7 +247,7 @@ namespace MarthasCoffe.DataAccess
                 Descripcion = "para 18 personas",
                 IdCategoria = 4,
                 Precio = 8,
-                Imagen = "pai.png"
+                Imagen = "pie.png"
             },
             new Producto
             {
@@ -343,7 +343,7 @@ namespace MarthasCoffe.DataAccess
             {
                 IdProducto = 29,
                 Nombre = "Pastel dulce",
-                Descripcion = "Patel de dulce de leche, para 30 personas",
+                Descripcion = "Pastel de dulce de leche, para 30 personas",
                 IdCategoria = 4,
                 Precio = 18,
                 Imagen = "dulcemilk.png"

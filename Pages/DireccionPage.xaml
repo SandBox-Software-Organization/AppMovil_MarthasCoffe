@@ -13,7 +13,8 @@
             <Label Text="Nueva Dirección" FontSize="Subtitle" VerticalOptions="Center"/>
         </StackLayout>
         <StackLayout Orientation="Vertical" Spacing="10" Padding="15">
-
+            <ImageButton Source="logo" CornerRadius="10"   VerticalOptions="Center"
+                         WidthRequest="100" HeightRequest="200" />
             <Entry Placeholder="Nombre de direccion" Text="{Binding NombreDireccion}"/>
             <Entry Placeholder="Nombre completo"  Text="{Binding NombreCompleto}"/>
             <Entry Placeholder="Calle" Text="{Binding Calle}"/>

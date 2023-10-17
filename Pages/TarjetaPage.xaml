@@ -13,7 +13,8 @@
             <Label Text="Nueva Tarjeta" FontSize="Subtitle" VerticalOptions="Center"/>
         </StackLayout>
         <StackLayout Orientation="Vertical" Spacing="10" Padding="15">
-
+            <ImageButton Source="logo" CornerRadius="10"   VerticalOptions="Center"
+                         WidthRequest="100" HeightRequest="200" />
             <Entry Placeholder="Nombre de tarjeta" Text="{Binding NombreTarjeta}"/>
             <Entry Placeholder="Número de tarjeta"  Text="{Binding NumeroTarjeta}"/>
 

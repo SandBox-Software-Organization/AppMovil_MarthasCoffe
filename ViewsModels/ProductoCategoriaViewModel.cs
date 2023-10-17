@@ -56,7 +56,7 @@ namespace MarthasCoffe.ViewsModels
                     Nombre = p.Nombre,
                     Descripcion = p.Descripcion,
                     RefCategoria = new CategoriaDTO { IdCategoria = p.RefCategoria.IdCategoria, Descripcion = p.RefCategoria.Descripcion },
-                    Imagen = p.Imagen,
+                   
                     Precio = p.Precio
                 });
             }

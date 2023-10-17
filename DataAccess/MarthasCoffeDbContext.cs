@@ -80,22 +80,22 @@ namespace MarthasCoffe.DataAccess
 
 
             modelBuilder.Entity<Categoria>().HasData(
-                new Categoria { IdCategoria = 1, Descripcion = "Bebidas", Imagen = "cup.jpg" },
-                new Categoria { IdCategoria = 2, Descripcion = "Platillos", Imagen = "cup.jpg" },
-                new Categoria { IdCategoria = 3, Descripcion = "Bocadillos", Imagen = "cup.jpg" },
-            new Categoria { IdCategoria = 3, Descripcion = "Postres", Imagen = "cup.jpg" }
+                new Categoria { IdCategoria = 1, Descripcion = "Bebidas" },
+                new Categoria { IdCategoria = 2, Descripcion = "Platillos" },
+                new Categoria { IdCategoria = 3, Descripcion = "Bocadillos" },
+            new Categoria { IdCategoria = 4, Descripcion = "Postres" }
                 );
 
-            //modelBuilder.Entity<Producto>().HasData(
-            //new Producto
-            //{
-            //  IdProducto = 1,
-            //Nombre = "sdfsfcds",
-            //Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
-            //IdCategoria = 1,
-            //Precio = 2000,
-            //Imagen = "cup.jpg"
-            //},
+            modelBuilder.Entity<Producto>().HasData(
+            new Producto
+            {
+              IdProducto = 1,
+            Nombre = "sdfsfcds",
+            Descripcion = "jsjsjs\r\nxxxxxD\r\njsjjsjsjsj\r\nssnsjssj\r\njsjsjsjsjjsjsjs",
+            IdCategoria = 1,
+            Precio = 2000,
+            Imagen = "cup.jpg"
+            }
             //new Producto
             //{
             //  IdProducto = 2,
@@ -186,7 +186,7 @@ namespace MarthasCoffe.DataAccess
                 //Precio = 110,
                 //Imagen = "cup.jpg"
             //}
-                //);
+                );
         }
     }
 }

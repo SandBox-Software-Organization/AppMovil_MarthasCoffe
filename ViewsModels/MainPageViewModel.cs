@@ -56,7 +56,7 @@ namespace MarthasCoffe.ViewsModels
                 listCategoria.Add(new CategoriaDTO { IdCategoria = item.IdCategoria, Descripcion = item.Descripcion, Imagen = item.Imagen });
             }
 
-            foreach (var item in _context.Productos.ToList().Take(6))
+            foreach (var item in _context.Productos.ToList().Take(4))
             {
                 listProducto.Add(new ProductoDTO { IdProducto = item.IdProducto, Nombre = item.Nombre, Descripcion = item.Descripcion, Precio = item.Precio, Imagen = item.Imagen });
             }
@@ -64,5 +64,7 @@ namespace MarthasCoffe.ViewsModels
             Categorias = listCategoria;
             MejoresProductos = listProducto;
         }
+
+
     }
 }

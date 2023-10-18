@@ -91,7 +91,7 @@ namespace MarthasCoffe.DataAccess
             {
                 IdProducto = 1,
                 Nombre = "Horchata",
-                Descripcion = "---",
+                Descripcion = "Horchata de banan, ideal para los dias calurosos",
                 IdCategoria = 1,
                 Precio = 2,
                 Imagen = "horchata.png"
@@ -100,7 +100,7 @@ namespace MarthasCoffe.DataAccess
            {
                IdProducto = 2,
                Nombre = "Limonada de Fresa",
-               Descripcion = "---",
+               Descripcion = "",
                IdCategoria = 1,
                Precio = 2,
                Imagen = "limonada.jpg"

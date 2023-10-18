@@ -219,7 +219,7 @@ namespace MarthasCoffe.DataAccess
                Nombre = "Crema de brocoli",
                Descripcion = "---",
                IdCategoria = 2,
-               Precio = 230,
+               Precio = 2,
                Imagen = "crema.png"
            },
            new Producto

@@ -10,7 +10,7 @@
              
              Title="{Binding NombreCategoria}" 
              
-             Shell.TabBarIsVisible="False">
+             Shell.TabBarIsVisible="True">
     
     <!-- Definición del grid -->
 
@@ -61,7 +61,7 @@
                                     <RowDefinition Height="Auto"/>
                                     
                                 </Grid.RowDefinitions>
-                                 
+                                  
                                 <!-- Definición de imagenes -->
                                 
                                 <Image Grid.Row="0" Source="{Binding Imagen}" HorizontalOptions="Center"/>

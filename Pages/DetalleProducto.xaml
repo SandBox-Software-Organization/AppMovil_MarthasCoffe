@@ -8,7 +8,7 @@
              
              Title="{Binding Producto.Nombre}"
              
-             Shell.TabBarIsVisible="False">
+            >
     
     <ScrollView>
 
@@ -20,9 +20,10 @@
                 
                 <RowDefinition Height="350"/>
                 
-                <RowDefinition/>
-                
-                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+
+                    <RowDefinition Height="Auto"/>
                 
             </Grid.RowDefinitions>
             
@@ -30,15 +31,13 @@
 
             <VerticalStackLayout Grid.Row="1" Spacing="10">
                 
-                <Label Text="{Binding Producto.Nombre}" FontSize="Subtitle" FontAttributes="Bold"/>
+                <Label Text="Precio:" FontSize="Subtitle" FontAttributes="Bold"/>
                 
                 <Label Text="{Binding Producto.Precio, StringFormat='{0:C}'}" FontSize="Subtitle"/>
                 
-                <Border HorizontalOptions="FillAndExpand"></Border>
+            
 
-                <Label Text="{Binding Producto.Descripcion}" FontSize="Subtitle" />
-
-                <Border HorizontalOptions="FillAndExpand"></Border>
+               
                 
                 <StackLayout Orientation="Horizontal">
                     
@@ -50,9 +49,9 @@
 
             </VerticalStackLayout>
 
-            <StackLayout Grid.Row="2" Orientation="Horizontal">
+            <StackLayout Grid.Row="3" Orientation="Horizontal">
                 
-                <Border HorizontalOptions="Start" StrokeThickness="0">
+                <Border HorizontalOptions="Start" StrokeThickness="0" Background="Transparent">
                     
                     <Grid>
                         
@@ -66,7 +65,7 @@
                             
                         </Grid.ColumnDefinitions>
                         
-                        <Button Grid.Column="0" Text="-" CornerRadius="50" FontAttributes="Bold" Command="{Binding RestarEventCommand}" Margin="2,2,2,2"/>
+                        <Button Grid.Column="0" Text="-" CornerRadius="50" FontAttributes="Bold" Command="{Binding RestarEventCommand}" Margin="2,2,2,2" />
 
                         <Label Grid.Column="1" Text="{Binding Cantidad}" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Padding="10,10,10,10"/>
                         

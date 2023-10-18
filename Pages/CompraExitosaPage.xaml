@@ -17,7 +17,7 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <Image Grid.Row="1"  HeightRequest="90" WidthRequest="90" Aspect="AspectFill"  Source="ki.png" />
+        <Image Grid.Row="1"  HeightRequest="90" WidthRequest="90" Aspect="AspectFill"  Source="ki.png"/>
         <Label Grid.Row="2" Text="Tu compra ha sido exitosa!" Margin="0,15" HorizontalOptions="Center" FontSize="Title"/>
         <StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="Center" Margin="0,0,0,20">
             <Label Text="Numero de compra:" FontSize="Subtitle"/>

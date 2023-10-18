@@ -68,7 +68,7 @@
 
             <VerticalStackLayout Grid.Row="3" Grid.Column="0">
                 
-            <Label Text="*Usuario: Admin" FontSize="Small" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label Text="*Usuario: Marthas" FontSize="Small" HorizontalOptions="Center" FontAttributes="Bold"/>
         
             <Label Text="*Contraseña:  123"  FontSize="Small" HorizontalOptions="Center" FontAttributes="Bold"/>
 

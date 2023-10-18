@@ -1,111 +1,153 @@
 <?xml version="1.0" encoding="utf-8" ?>
+    
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
              xmlns:model="clr-namespace:MarthasCoffe.DTO"
+             
              x:Class="MarthasCoffe.Pages.CarritoPage"
-             Title="Carrito"
-              IconImageSource="pedidoicono"
-             >
-    <VerticalStackLayout Padding="10,10,10,10">
+             
+             Title="Estado actual de la orden"
+             
+             IconImageSource="pedidoicono">
+        
         <Grid RowSpacing="5">
+            
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="Auto"/>
+                
+                <RowDefinition Height="auto"/>
+                
+                <RowDefinition/>
+                
+                <RowDefinition Height="auto"/>
+                            
             </Grid.RowDefinitions>
            
             <StackLayout Grid.Row="0" Orientation="Vertical">
 
-                <StackLayout Orientation="Horizontal" BackgroundColor="WhiteSmoke" HeightRequest="50">
-                    <Label  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="Subtitle" FontAttributes="Bold" Text="Estado actual de la orden"/>
+                <StackLayout Orientation="Horizontal" HeightRequest="50">
+                    
                     <Label  Text="Total:" FontAttributes="Bold" FontSize="Subtitle" VerticalOptions="Center" Margin="15,0"/>
-                    <Label Text="{Binding Total, StringFormat='{0:C}'}"  TextColor="#1d94ab" VerticalOptions="Center" HorizontalOptions="EndAndExpand" Margin="15,0" FontAttributes="Bold" FontSize="Subtitle"/>
+                    
+                    <Label Text="{Binding Total, StringFormat='{0:C}'}" VerticalOptions="Center" HorizontalOptions="End"  FontAttributes="Bold" FontSize="Subtitle"/>
+                    
                 </StackLayout>
-                <Border HorizontalOptions="FillAndExpand"></Border>
+     
             </StackLayout>
             
-
             <Label Grid.Row="1"  Text="No hay productos en la bolsa" IsVisible="{Binding NoExisteProductos}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Subtitle"/>
            
             <ScrollView Grid.Row="1" IsVisible="{Binding ExisteProductos}">
                 
-                <CollectionView SelectionMode="None"  ItemsSource="{Binding ListaCarrito}" HorizontalOptions="FillAndExpand" Margin="10,10"
-                                >
+                <CollectionView SelectionMode="None"  ItemsSource="{Binding ListaCarrito}" HorizontalOptions="FillAndExpand" Margin="10,10">
+                    
                     <CollectionView.ItemsLayout>
+                        
                         <LinearItemsLayout Orientation="Vertical" ItemSpacing="20"/>
+                        
                     </CollectionView.ItemsLayout>
 
                     <CollectionView.ItemTemplate>
+                        
                         <DataTemplate x:DataType="model:CarritoDTO">
 
                             <Border Padding="10,15,15,15" HorizontalOptions="FillAndExpand">
+                                
                                 <Border.StrokeShape>
-                                    <RoundRectangle CornerRadius="10,10,10,10"/>
+                                    
+                                    <RoundRectangle CornerRadius="100,10,100,10"/>
+                                    
                                 </Border.StrokeShape>
 
                                 <Grid ColumnSpacing="10" HorizontalOptions="FillAndExpand">
+                                    
                                     <Grid.ColumnDefinitions>
+                                        
                                         <ColumnDefinition Width="2*" />
+                                        
                                         <ColumnDefinition Width="3*" />
+                                        
                                         <ColumnDefinition Width="2*" />
+                                        
                                     </Grid.ColumnDefinitions>
-                                    <Image Grid.Column="0" Aspect="AspectFit" Source="{Binding Producto.Imagen}"  HeightRequest="100" HorizontalOptions="StartAndExpand"/>
+                                    
+                                    <Image Grid.Column="0" Aspect="AspectFit" Source="{Binding Producto.Imagen}" HorizontalOptions="StartAndExpand"/>
 
                                     <StackLayout Grid.Column="1"  Orientation="Vertical">
+                                        
                                         <Label Text="{Binding Producto.Nombre}" VerticalOptions="StartAndExpand"/>
 
-                                        <Border HorizontalOptions="Start" Stroke="#512BD4" StrokeThickness="3" VerticalOptions="EndAndExpand">
-                                            <Grid WidthRequest="110" HeightRequest="37">
+                                        <Border HorizontalOptions="Start"  StrokeThickness="0" VerticalOptions="EndAndExpand">
+                                            
+                                            <Grid>
+                                                
                                                 <Grid.ColumnDefinitions>
+                                                    
                                                     <ColumnDefinition Width="Auto"/>
+                                                    
                                                     <ColumnDefinition Width="*"/>
+                                                    
                                                     <ColumnDefinition Width="Auto"/>
+                                                    
                                                 </Grid.ColumnDefinitions>
-                                                <Button Grid.Column="0" Text="-" CornerRadius="0" FontAttributes="Bold" HeightRequest="37" WidthRequest="37" 
+
+                                                <Button Grid.Column="0" Text="-"  Margin="2,2,2,2" CornerRadius="50" FontAttributes="Bold" HeightRequest="37" WidthRequest="37" 
+                                                        
                                                     Command="{Binding BindingContext.DisminuirEventCommand, Source={x:RelativeSource AncestorType={x:Type ContentPage}}}"
-                                                    CommandParameter="{Binding}"
-                                                    ></Button>
-                                                <Label Grid.Column="1"  FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Text="{Binding Cantidad}"  />
-                                                <Button Grid.Column="2" Text="+" CornerRadius="0" FontAttributes="Bold" HeightRequest="37" WidthRequest="37" 
+                                                        
+                                                    CommandParameter="{Binding}"/>
+
+                                                <Label Grid.Column="1"  Margin="5,5,5,5" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Text="{Binding Cantidad}"/>
+
+                                                <Button Grid.Column="2" Text="+" Margin="2,2,2,2" CornerRadius="50" FontAttributes="Bold" HeightRequest="37" WidthRequest="37" 
+                                                        
                                                     Command="{Binding BindingContext.AumentarEventCommand, Source={x:RelativeSource AncestorType={x:Type ContentPage}}}"
-                                                    CommandParameter="{Binding}"
-                                                    ></Button>
+                                                        
+                                                    CommandParameter="{Binding}"/>
+                                                
                                             </Grid>
+                                            
                                         </Border>
+                                        
                                     </StackLayout>
 
                                     <StackLayout Grid.Column="2"  Orientation="Vertical">
-                                        <Label  Text="{Binding Total, StringFormat='{0:C}'}" FontSize="Subtitle" TextColor="#1d94ab" HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand" />
-                                        <Label Text="Eliminar" HorizontalOptions="EndAndExpand" TextColor="IndianRed">
+                                        
+                                        <Label  Text="{Binding Total, StringFormat='{0:C}'}" FontSize="Subtitle" TextColor="Green" HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand"/>
+                                        
+                                        <Label Text="Eliminar" HorizontalOptions="EndAndExpand" TextColor="Red">
+                                            
                                             <Label.GestureRecognizers>
+                                                
                                                 <TapGestureRecognizer 
-                                                Command="{Binding BindingContext.EliminarEventCommand, Source={x:RelativeSource AncestorType={x:Type ContentPage}}}"
-                                                                  CommandParameter="{Binding}"
-                                                                  />
+                                                    
+                                                Command="{Binding BindingContext.EliminarEventCommand, Source={x:RelativeSource AncestorType={x:Type ContentPage}}}" CommandParameter="{Binding}"/>
+                                                
                                             </Label.GestureRecognizers>
+                                            
                                         </Label>
+                                        
                                     </StackLayout>
-
 
                                 </Grid>
 
                             </Border>
 
                         </DataTemplate>
+                        
                     </CollectionView.ItemTemplate>
 
                 </CollectionView>
+                
             </ScrollView>
 
-            <StackLayout Grid.Row="2" Orientation="Horizontal" BackgroundColor="WhiteSmoke" Padding="10">
-                <Button Text="Continuar" HorizontalOptions="EndAndExpand" WidthRequest="150" BackgroundColor="#3E8EED" 
-                    Command="{Binding ContinuarEventCommand}"
-                    ></Button>
-            </StackLayout>
+        <VerticalStackLayout Grid.Row="2" Padding="10,10,10,10">
+            
+        <Button CornerRadius="35"  Text="Completar orden" Command="{Binding ContinuarEventCommand}"/>
+            
+        </VerticalStackLayout>
 
         </Grid>
-    </VerticalStackLayout>
-   
-
+    
 </ContentPage>

@@ -3,18 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:model="clr-namespace:MarthasCoffe.DTO"
              x:Class="MarthasCoffe.Pages.MisComprasPage"
-             Title="MisComprasPage"
-            
-               Shell.TabBarIsVisible="False">
-    <Grid Margin="10,0">
+             Title="Mis compras">
+    <Grid Margin="10,10,10,10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+      
 
-        <Label Grid.Row="0" Text="Mis Compras" FontSize="Large" Margin="15"/>
-
-        <ScrollView Grid.Row="1">
+        <ScrollView Grid.Row="0">
 
             <CollectionView SelectionMode="Single" ItemsSource="{Binding ListaCompras}" HorizontalOptions="FillAndExpand">
                 <CollectionView.ItemsLayout>
@@ -24,13 +21,13 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:CompraDTO">
 
-                        <Frame HorizontalOptions="FillAndExpand">
+                        <Frame HorizontalOptions="FillAndExpand" BackgroundColor="#553d2a">
                             <StackLayout Orientation="Vertical" Spacing="5">
                                 <StackLayout Orientation="Horizontal">
                                     <Label Text="Numero de compra:" FontSize="Subtitle" FontAttributes="Bold" HorizontalOptions="StartAndExpand"/>
                                     <Label Text="{Binding NumeroCompra}" FontSize="Subtitle" FontAttributes="Bold" HorizontalOptions="EndAndExpand"/>
                                 </StackLayout>
-                                <Border HorizontalOptions="FillAndExpand" Stroke="#dadada"></Border>
+                                <Border HorizontalOptions="FillAndExpand" BackgroundColor="#907761"></Border>
                                 <StackLayout Orientation="Horizontal">
                                     <Label Text="Enviado a:" FontSize="Subtitle"  HorizontalOptions="StartAndExpand"/>
                                     <Label Text="{Binding RefDireccion.NombreDireccion}" FontSize="Subtitle" FontAttributes="Bold" HorizontalOptions="EndAndExpand"/>
@@ -39,11 +36,11 @@
                                     <Label Text="Pagado con:" FontSize="Subtitle" HorizontalOptions="StartAndExpand"/>
                                     <Label Text="{Binding RefTarjeta.NombreTarjeta}" FontSize="Subtitle" FontAttributes="Bold" HorizontalOptions="EndAndExpand"/>
                                 </StackLayout>
-                                <Border HorizontalOptions="FillAndExpand" Stroke="#dadada"></Border>
+                                <Border HorizontalOptions="FillAndExpand"  BackgroundColor="#907761" ></Border>
                                 <StackLayout Orientation="Horizontal">
                                     <Label Text="{Binding FechaRegistro}" FontSize="Subtitle" FontAttributes="Bold" HorizontalOptions="StartAndExpand"/>
                                     <Label Text="Total:" FontSize="Subtitle" FontAttributes="Bold" HorizontalOptions="EndAndExpand"/>
-                                    <Label Text="{Binding Total,StringFormat='{0:C}'}" FontSize="Subtitle" FontAttributes="Bold" HorizontalOptions="EndAndExpand" TextColor="#1d94ab"/>
+                                    <Label Text="{Binding Total,StringFormat='{0:C}'}" FontSize="Subtitle" FontAttributes="Bold" HorizontalOptions="EndAndExpand" />
                                 </StackLayout>
                             </StackLayout>
                         </Frame>

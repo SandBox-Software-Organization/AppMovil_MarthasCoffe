@@ -36,7 +36,7 @@
 		<MauiIcon Include="Resources\AppIcon\iconlog.png" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splog.png" Color="#553d2a" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -51,6 +51,10 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\AppIcon\iconlog.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiSplashScreen Include="Resources\Splash\splog.png" Color="#553d2a"/>
 	</ItemGroup>
 
 	<ItemGroup>
